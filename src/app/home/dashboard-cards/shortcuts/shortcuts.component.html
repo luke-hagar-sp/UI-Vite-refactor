@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <mat-icon>link</mat-icon>
+      Quick Actions & Shortcuts
+    </mat-card-title>
+    <mat-card-subtitle>Access common tools and features</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="shortcuts-grid">
+      <a 
+        mat-button
+        class="shortcut-item" 
+        *ngFor="let shortcut of shortcuts"
+        href="{{ shortcut.url }}" target="_blank"
+      >
+        <mat-icon>{{ shortcut.icon }}</mat-icon>
+        <span>{{ shortcut.label }}</span>
+      </a>
+    </div>
+  </mat-card-content>
+</mat-card> 

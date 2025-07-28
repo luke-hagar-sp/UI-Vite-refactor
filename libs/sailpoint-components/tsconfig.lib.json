@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc/lib",
+    "target": "ES2022",
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "inlineSources": true,
+    "types": []
+  },
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/test-setup.ts",
+    "src/**/*.test.ts"
+  ]
+} 

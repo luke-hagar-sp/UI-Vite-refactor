@@ -1,0 +1,57 @@
+{
+  "name": "sailpoint-components",
+  "version": "1.0.0",
+  "description": "Angular UI Component Library for Electron Vite App",
+  "type": "module",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "types": "./index.ts"
+    }
+  },
+  "scripts": {
+    "build": "echo 'No build step needed for direct imports'",
+    "build:watch": "echo 'No build step needed for direct imports'",
+    "lint": "echo 'Linting handled by root project'",
+    "test": "echo 'Testing handled by root project'",
+    "package": "echo 'No packaging needed for workspace'"
+  },
+  "peerDependencies": {
+    "@angular/common": "^20.1.3",
+    "@angular/core": "^20.1.3",
+    "@angular/forms": "^20.1.3",
+    "@angular/platform-browser": "^20.1.3"
+  },
+  "keywords": [
+    "angular",
+    "components",
+    "ui",
+    "electron",
+    "vite"
+  ],
+  "author": "WebEXP0528",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/material": "^20.1.3",
+    "@codemirror/autocomplete": "^6.18.6",
+    "@codemirror/commands": "^6.8.1",
+    "@codemirror/language": "^6.11.2",
+    "@codemirror/legacy-modes": "^6.5.1",
+    "@codemirror/search": "^6.5.11",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/theme-one-dark": "^6.1.3",
+    "@codemirror/view": "^6.38.1",
+    "codemirror": "^6.0.2",
+    "d3": "^7.9.0",
+    "lodash-es": "^4.17.21",
+    "prismjs": "^1.30.0",
+    "sequential-workflow-designer": "^0.30.0",
+    "sequential-workflow-designer-angular": "^0.30.0",
+    "sequential-workflow-editor": "^0.14.8",
+    "sequential-workflow-editor-model": "^0.14.8",
+    "thememirror": "^2.0.1"
+  }
+}

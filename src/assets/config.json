@@ -1,0 +1,6 @@
+{
+    "components": {
+        "enabled": ["transforms"]
+    },
+    "version": "1.0.0"
+}

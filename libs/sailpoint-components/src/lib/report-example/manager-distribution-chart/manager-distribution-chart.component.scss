@@ -1,0 +1,27 @@
+.chart-container {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.chart {
+  width: 100%;
+  min-height: 400px;
+}
+
+/* Custom styling for d3 charts */
+:host ::ng-deep text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Hover effect for clickable elements */
+:host ::ng-deep path:hover {
+  opacity: 0.8;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+:host ::ng-deep .pie-label:hover {
+  font-weight: bold;
+}

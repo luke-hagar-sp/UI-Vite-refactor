@@ -1,0 +1,122 @@
+.report-example-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar-title {
+  margin-left: 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  padding: 24px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+mat-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.loading-container,
+.error-container,
+.no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px;
+  text-align: center;
+}
+
+.error-container mat-icon,
+.no-data mat-icon {
+  font-size: 48px;
+  height: 48px;
+  width: 48px;
+  margin-bottom: 16px;
+}
+
+.error-container mat-icon {
+  color: #f44336;
+}
+
+.charts-container {
+  width: 100%;
+}
+
+.charts-content {
+  margin-top: 16px;
+}
+
+.chart-section {
+  margin-bottom: 48px;
+}
+
+.chart-section h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.chart-container {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.chart {
+  width: 100%;
+  min-height: 400px;
+}
+
+.data-summary {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: var(--background-color, #f5f5f5);
+  color: var(--text-color, inherit);
+  border-radius: 4px;
+}
+
+.cancel-button {
+  margin-top: 16px;
+}
+
+.partial-data-badge {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.partial-data-note {
+  color: #ff9800;
+  font-style: italic;
+  margin-left: 6px;
+}
+
+.complete-data-note {
+  color: #4CAF50;
+  font-style: italic;
+  margin-left: 6px;
+}
+
+/* Custom styling for d3 charts */
+::ng-deep .label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+::ng-deep .axis-label {
+  font-size: 14px;
+  font-weight: 500;
+}

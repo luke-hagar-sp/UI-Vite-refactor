@@ -1,0 +1,10 @@
+{
+  //@ts-expect-error This reference is valid, but the type checker is not aware of it
+  "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
+  "include": ["electron.vite.config.*", "electron/main/**/*", "electron/preload/**/*"],
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "composite": true,
+    "types": ["electron-vite/node"]
+  }
+}

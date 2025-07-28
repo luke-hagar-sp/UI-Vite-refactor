@@ -1,0 +1,141 @@
+// @import "codemirror/lib/codemirror.css";
+// @import "codemirror/addon/fold/foldgutter.css";
+// @import "codemirror/addon/hint/show-hint.css";
+
+    .velocity-editor-dialog {
+      width: 100%;
+      max-width: 1000px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dialog-content {
+      flex: 1;
+      padding: 0 24px;
+      overflow: hidden;
+    }
+
+    .editor-form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .editor-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 8px;
+    }
+
+    .toolbar-left {
+      display: flex;
+      gap: 4px;
+    }
+
+    .toolbar-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .editor-info {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .info-item {
+      padding: 2px 6px;
+      background: #f5f5f5;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    .code-editor-container {
+      flex: 1;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .dialog-actions {
+      padding: 16px 24px;
+      border-top: 1px solid #eee;
+    }
+
+    .cancel-btn {
+      margin-right: 8px;
+    }
+
+    /* CodeMirror 6 custom styles */
+    ::ng-deep .cm-editor {
+      height: 100%;
+      font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+      font-size: 14px;
+    }
+
+    ::ng-deep .cm-content {
+      padding: 16px;
+    }
+
+    ::ng-deep .cm-focused {
+      outline: none;
+    }
+
+    ::ng-deep .cm-scroller {
+      font-family: 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+    }
+
+    /* Custom Velocity syntax highlighting */
+    ::ng-deep .cm-velocity-variable {
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    ::ng-deep .cm-velocity-directive {
+      color: #cc6600;
+      font-weight: bold;
+    }
+
+    ::ng-deep .cm-velocity-comment {
+      color: #666;
+      font-style: italic;
+    }
+
+    ::ng-deep .cm-velocity-string {
+      color: #009900;
+    }
+
+    ::ng-deep .cm-velocity-number {
+      color: #990099;
+    }
+
+    /* Dark theme adjustments */
+    ::ng-deep .cm-editor.cm-focused.cm-dark {
+      outline: none;
+    }
+
+    ::ng-deep .cm-dark .cm-velocity-variable {
+      color: #4fc3f7;
+    }
+
+    ::ng-deep .cm-dark .cm-velocity-directive {
+      color: #ffb74d;
+    }
+
+    ::ng-deep .cm-dark .cm-velocity-comment {
+      color: #999;
+    }
+
+    ::ng-deep .cm-dark .cm-velocity-string {
+      color: #81c784;
+    }
+
+    ::ng-deep .cm-dark .cm-velocity-number {
+      color: #ce93d8;
+    }
